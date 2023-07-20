@@ -1,0 +1,2 @@
+D:\code\test0720\x64\Debug\test0720.exe
+D:\code\C-training\test0720\x64\Debug\test0720.exe
