@@ -131,7 +131,7 @@ int main()
 			if (i % j == 0)
 				break;
 		}
-		if (j > sqrt(i))
+		if (j > i-1)
 			printf("%d ", i);
 	}
 	return 0;
