@@ -83,21 +83,21 @@
 
 //编写程序数一下 1到 100 的所有整数中出现多少个数字9
 
-//#include <stdio.h>
-//int main()
-//{
-//	int i,n;
-//	n = 0;
-//	for (i = 1; i <= 100; i++)
-//	{
-//		if (i % 10 == 9)
-//			n++;
-//		else if ((i / 10) % 10 == 9)
-//			n++;
-//	}
-//	printf("1到100的所有整数中出现%d个数字9\n", n);
-//	return 0;
-//}
+#include <stdio.h>
+int main()
+{
+	int i,n;
+	n = 0;
+	for (i = 1; i <= 100; i++)
+	{
+		if (i % 10 == 9)
+			n++;
+		if ((i / 10) % 10 == 9)
+			n++;
+	}
+	printf("1到100的所有整数中出现%d个数字9\n", n);
+	return 0;
+}
 
 //写一个代码：打印100~200之间的素数
 
@@ -119,20 +119,20 @@
 //	return 0;
 //}
 
-#include <stdio.h>
-#include <math.h>
-int main()
-{
-	int i = 0, j = 0;
-	for (i = 100; i <= 200; i++)
-	{
-		for (j = 2; j <= i-1 ; j++)
-		{
-			if (i % j == 0)
-				break;
-		}
-		if (j > i-1)
-			printf("%d ", i);
-	}
-	return 0;
-}
+//#include <stdio.h>
+//#include <math.h>
+//int main()
+//{
+//	int i = 0, j = 0;
+//	for (i = 100; i <= 200; i++)
+//	{
+//		for (j = 2; j <= i-1 ; j++)
+//		{
+//			if (i % j == 0)
+//				break;
+//		}
+//		if (j > i-1)
+//			printf("%d ", i);
+//	}
+//	return 0;
+//}
