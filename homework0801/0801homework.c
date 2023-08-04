@@ -2,18 +2,22 @@
 
 //喝汽水，1瓶汽水1元，2个空瓶可以换一瓶汽水，给20元，可以喝多少汽水（编程实现）。
 
-//#include <stdio.h>
-//int main()
-//{
-//	int x = 20, y = 20;
-//	while (x / 2 > 0)
-//	{
-//		x = x / 2;
-//		y = y + x;
-//	}
-//	printf("可以喝%d瓶汽水\n", y);
-//	return 0;
-//}
+#include <stdio.h>
+int main()
+{
+	int x = 20, y = 20, temp = 0;
+	while (x / 2 > 0)
+	{
+		x = x / 2;
+		y = y + x;
+		if (x % 2 == 1)
+			temp++;
+		if (temp == 2)
+			y++;
+	}
+	printf("可以喝%d瓶汽水\n", y);
+	return 0;
+}
 
 //打印菱形
 
@@ -95,18 +99,18 @@
 //求Sn = a + aa + aaa + aaaa + aaaaa的前5项之和，其中a是一个数字，
 //例如：2 + 22 + 222 + 2222 + 22222
 
-#include<stdio.h>
-int main()
-{
-    long s = 1, t = 1;
-    int i, a;
-    scanf("%d", &a);
-    for (i = 1; i < 5; i++)
-    {
-        t = t * 10 + 1;
-        s = s + t;
-    }
-    s = s * a;
-    printf("%ld\n", s);
-    return 0;
-}
+//#include<stdio.h>
+//int main()
+//{
+//    long s = 1, t = 1;
+//    int i, a;
+//    scanf("%d", &a);
+//    for (i = 1; i < 5; i++)
+//    {
+//        t = t * 10 + 1;
+//        s = s + t;
+//    }
+//    s = s * a;
+//    printf("%ld\n", s);
+//    return 0;
+//}
