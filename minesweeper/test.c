@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
+
 #include "game.h"
 void menu()
 {
@@ -20,6 +21,7 @@ void game()
 	DisplayBoard(show, ROW, COL);
 	//²¼À×
 	SetMine(mine, ROW, COL);
+	//DisplayBoard(mine, ROW, COL);
 	//ÅÅ²é
 	FindMine(mine, show, ROW, COL);
 }
